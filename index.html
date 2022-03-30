@@ -75,7 +75,7 @@
         <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">See
           Project</button>
       </div>
-      <div class="card col me-1 mb-1"">
+      <div class="card col me-1 mb-1">
         <img src="./images/desk3.png" class="card-img-top rounded" alt="website portfolio image">
         <div class="card-body">
           <h5 class="card-title">Website Portfolio</h5>
@@ -147,17 +147,13 @@
     <h2 class="mb-5 text-center display-3  border-bottom">Please contact me about anything to do with Software Engineering</h2>
     <form>
       <div class="mb-3 mt-3">
-        <label for="name" class="form-label">Full Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter Full Name" name="name">
+        <input type="text" class="form-control" id="name" placeholder="Enter Full Name" name="name"  aria-label="full name" required>
       </div>
       <div class="mb-3">
-        <label for="emai" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email address" name="email">
+        <input type="email" class="form-control" id="email" placeholder="Enter email address" name="email" aria-label="email" required>
       </div>
       <div class="mb-3">
-        <label for="comment">Comments:</label>
-        <textarea class="form-control" rows="5" id="comment" placeholder="Enter your message here..."
-          name="comment"></textarea>
+        <textarea class="form-control" rows="5" id="comment" placeholder="Enter your message here..." name="comment"  aria-label="comment" required></textarea>
       </div>
       <button type="submit" class="btn btn-primary w-100">Submit</button>
     </form>
